@@ -1,0 +1,70 @@
+.sidebar-toggle{
+    display: none !important;
+}
+   
+@media (max-width: 767px){
+    .sidebar-toggle{
+        display: block !important;
+    }
+    .fixed .main-header {
+    width: 100%;
+    }
+    
+    body > div.wrapper > aside > div > section > ul.sidebar-menu > li:nth-child(5),
+    body > div.wrapper > aside > div > section > ul.sidebar-menu > li:nth-child(4){
+        display: none !important;
+    }
+
+}
+
+.control-sidebar {
+    right: -280px !important;
+    width: 280px !important;
+    position: absolute;
+    padding-top: 50px;
+    z-index: 1010;
+}
+
+.control-sidebar.control-sidebar-open{
+    right: 0px !important;
+}
+
+.body-doc-current{
+    padding: 2%;
+    padding-top: 1%; 
+}
+
+
+body > div.wrapper > aside.main-sidebar > section > div > div.pull-left.info > p{
+    font-size: 14px !important;
+}
+#labelUserPanel > span > span{
+    font-size: 95%;
+    font-weight: 100;
+}
+#labelUserPanel{
+    font-size: 12px !important;
+}
+
+.hide{
+    display: none !important;
+}
+
+.content_tiny{
+    margin-top: -15px;
+}
+
+.main-header{
+    width: 15%;
+}
+
+.content-wrapper{
+    margin-top: -3%;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+.welcome{
+    font-family: 'Shrikhand', cursive;
+}

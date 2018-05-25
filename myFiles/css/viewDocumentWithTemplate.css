@@ -1,0 +1,14 @@
+*[data-template-variable], *[data-template-variable] > * , *[data-template-variable] > * > *  {
+    background: #f7a728;
+    padding: 2px;
+    cursor: pointer;
+
+}
+
+div[data-template-instance]{
+    background: #FFCB70;
+    border-radius: 10px;
+
+}
+
+

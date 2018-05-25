@@ -1,0 +1,180 @@
+<div class="modalContainer">
+  
+        <!--modal per la creazione di un nuovo doc-->
+        <div id="modal-titleDoc" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+
+                <h4 class="modal-title"><i class="fa fa-pencil" aria-hidden="true"></i> New Document</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                <label>Title document: </label>
+                    <input class="inputTitleDoc form-control" value="" type="text">
+                    <!--<span style="display: none " class="titleError help-block">Titolo Obbligatorio</span>-->
+                </div>
+               
+              </div>
+              <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+
+                <button type="button" id="buttonModalTitleDoc" class="btn btn-primary">Ok</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        
+        <!--modal per la creazione di un nuovo template-->
+        <div id="modal-titleTemplate" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title"><i class="fa fa-pencil" aria-hidden="true"></i> New Template</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                <label>Title Template: </label>
+                    <input class="inputTitleTemplate form-control" value="" type="text">
+                </div>
+                 <div class="form-group">
+                  <label>Description: </label>
+                  <textarea class="descrTemplate form-control" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+
+                <button type="button" id="buttonModalTitleTemplate" class="btn btn-primary">Ok</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        
+        <div id="modalMetaDati" class="modal modal-info">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title tipoMetaDati"></h4>
+              </div>
+              <div class="modal-body">
+               <dl style="font-size: 14px" class="dl-horizontal">
+                <dt>Name: </dt>
+                <dd class="nomeMetaDati"></dd>
+                <div class="bodyMetaDati"></div>
+              </dl>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        
+        <!--Modal per l'inserimento di un template-->
+<div id="viewListTemplate" class="modal">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+         
+            <h4 class="modal-title"><i class="fa fa-clipboard" aria-hidden="true"></i> Select a template</h4>
+         </div>
+         <div style="height: 100%;" class="modal-body">
+            <table class="table table-bordered">
+               <tbody class="listTemplate"></tbody>
+            </table>
+         </div>
+         <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+         </div>
+      </div>
+      <!-- /.modal-content -->
+   </div>
+   <!-- /.modal-dialog -->
+</div>
+
+
+<!--Modal per la creazione della variabile-->
+<div id="createVar" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title"><i class="fa fa-plus" aria-hidden="true"></i> Create Variable</h4>
+              </div>
+              <div class="modal-body">
+               <div class="form-group">
+                <label class="alert_error text-red"></label>
+                <br>
+                  <label for="nameVar">Name:</label>
+                  <input type="text" class="form-control" value="" id="nameVar">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                <button type="button" id="createVarModalButton" class="btn btn-primary">Create Variable</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+
+
+        <div id="modalVarEdit" class="modal">
+          <div style="width: 70%;" class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span id="nomeTemplate"></span></h4>
+              </div>
+              <div class="modal-body">
+                <p id="contentEditVar">
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                <button type="button" id="applyEditVariable"  data-dismiss="modal" class="btn btn-primary">Apply changes</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        
+        
+        
+<!--Modal per l'anteprima della modifica-->
+<div id="viewModDoc" class="modal">
+          <div class="modal-dialog" style="width: 98%;">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Preview</h4>
+              </div>
+              <div class="modal-body">
+                <div class="col-md-12">
+                    <link rel="stylesheet" href="myFiles/css/modalPreview.css">
+                    <div  id="previewDoc">
+                        $PREVIEW_DOC$
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button id="applyAllUpdate" class="btn btn-info">Apply all changes</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        
+        
+</div>
+
+

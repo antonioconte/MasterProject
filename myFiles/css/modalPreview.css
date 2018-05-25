@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+*{border:0;padding:0;margin:0;background:50% 50% no-repeat;text-decoration:none;color:inherit;box-sizing:border-box;font-weight:400}
+:focus{outline:0}
+b,b *,strong,strong *{font-weight:700}
+ol,ul{list-style:none}
+@font-face{font-family:aileron;font-style:normal;font-weight:200;src:url(../fonts/aileron-ultra-light.eot?#iefix) format("embedded-opentype"),url(../fonts/aileron-ultra-light.woff) format("woff"),url(../fonts/aileron-ultra-light.ttf) format("truetype")}
+.codepen body{margin:10px 0 0}
+.codepen body textarea{display:none}
+textarea{display:initial!important}
+#previewDoc{font-family:Lato!important;font-size:14px;color:black;padding:0 25px 25px}
+#previewDoc h1,#previewDoc h2,#previewDoc h3,#previewDoc h4,#previewDoc h5,#previewDoc h6{font-family:aileron;font-weight:200;line-height:1.4em;margin:25px 0 15px}
+#previewDoc h1{font-size:34px}
+#previewDoc h2{font-size:30px}
+#previewDoc h3{font-size:26px}
+#previewDoc h4{font-size:22px}
+#previewDoc h5{font-size:18px}
+#previewDoc h6{font-size:14px}
+#previewDoc p{margin:10px 0}
+#previewDoc ol,#previewDoc ul{margin-left:15px;list-style-position:outside;margin-bottom:20px}
+#previewDoc ol li,#previewDoc ul li{margin-left:10px;margin-bottom:10px;color:black}
+#previewDoc ul{list-style-type:disc}
+#previewDoc ol{list-style-type:decimal}
+#previewDoc a[href]{text-decoration:underline}
+#previewDoc table{width:100%;border-spacing:0;border-collapse:separate;border:1px solid white}
+#previewDoc table tr:nth-child(even){background:#FAFAFA}
+#previewDoc table caption,#previewDoc table td,#previewDoc table th{padding:15px 7px;font:inherit}
+#previewDoc table th{font-weight:400;color:#6E6E6E;background-position:100% 100%;background-size:2px 10px;background-repeat:no-repeat}
+#previewDoc table th:last-child{background:0 0}
+
+div[data-template-instance].updated{
+    background: #FFCB70;
+    padding: 5px;
+    border-radius: 10px;
+}
+div[data-template-instance].updated *[data-template-variable], div[data-template-instance].updated *[data-template-variable] *{
+    background: #f7a728;
+    padding: 1px;
+    cursor: pointer;
+}
